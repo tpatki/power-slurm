@@ -1,0 +1,7 @@
+# Notes for chameleon
+# Makefile.in files are committed, they don't necessarily need to be in there...
+#
+./autogen.sh
+./configure --enable-debug --prefix=/home/cc/slurm-install/
+make -j32
+make install

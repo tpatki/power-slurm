@@ -2,7 +2,8 @@
 # Makefile.in files are committed, they don't necessarily need to be in there...
 #
 ./autogen.sh
-./configure --enable-debug --prefix=/home/cc/slurm-install/
+#./configure --enable-debug --prefix=/home/cc/slurm-install/
+./configure --enable-debug --prefix=/root/argo-setup/power-slurm
 make -j32
 make install
 

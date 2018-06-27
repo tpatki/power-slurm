@@ -5,3 +5,15 @@
 ./configure --enable-debug --prefix=/home/cc/slurm-install/
 make -j32
 make install
+
+
+Can also use rpmbuild but this needs to be tested on the chameleon appliance.
+
+tar -cvjSf slurm-17.02.10.tar.bz2 slurm-17.02.10
+export RPM_BUILD_NCPUS=4
+rpmbuild -ta slurm-17.02.10.tar.bz2
+echo cd ~/rpmbuild/RPMS/x86_64
+echo sudo rpm -ivh slurm-*.rpm 
+
+slurm.conf needs to be setup. 
+
